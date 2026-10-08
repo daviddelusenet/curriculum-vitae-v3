@@ -13,7 +13,7 @@ export type Profile = {
 
 export const profile: Profile = {
   name: "David de Lusenet",
-  occupation: "Senior frontend engineer",
+  occupation: "Senior frontend developer",
   details: [
     { label: "Date of birth", value: "June 24, 1992" },
     { label: "Nationality", value: "Dutch" },

@@ -1,11 +1,14 @@
 import { Paragraph } from "@/components/paragraph/paragraph";
 import { Section } from "@/components/section/section";
-import { personalInterests } from "@/data/personal-interests";
+import { getPersonalInterests } from "@/data/personal-interests";
+import { getCvStats } from "@/lib/cv-stats";
 
-export const PersonalInterests = () => {
+export const PersonalInterests = async () => {
+  const { edenAge } = await getCvStats();
+
   return (
     <Section title="Personal interests">
-      {personalInterests.map((paragraph) => (
+      {getPersonalInterests({ edenAge }).map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
     </Section>

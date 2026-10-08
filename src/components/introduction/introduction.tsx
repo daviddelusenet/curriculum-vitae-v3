@@ -1,11 +1,14 @@
 import { Paragraph } from "@/components/paragraph/paragraph";
 import { Section } from "@/components/section/section";
-import { introduction } from "@/data/introduction";
+import { getIntroduction } from "@/data/introduction";
+import { getCvStats } from "@/lib/cv-stats";
 
-export const Introduction = () => {
+export const Introduction = async () => {
+  const { yearsOfExperience } = await getCvStats();
+
   return (
     <Section title="Introduction">
-      {introduction.map((paragraph) => (
+      {getIntroduction({ yearsOfExperience }).map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
     </Section>
