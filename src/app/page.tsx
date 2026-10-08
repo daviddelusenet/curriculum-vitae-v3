@@ -1,7 +1,19 @@
+import { DemographicInformation } from "@/components/demographic-information/demographic-information";
+import { DevelopmentSkills } from "@/components/development-skills/development-skills";
+import { Introduction } from "@/components/introduction/introduction";
+import { PersonalInterests } from "@/components/personal-interests/personal-interests";
+import { WorkingExperience } from "@/components/working-experience/working-experience";
+
 export default function Home() {
   return (
-    <main className="pt-10 md:pt-20">
-      <h1 className="font-serif text-4xl">David de Lusenet</h1>
-    </main>
+    <>
+      <DemographicInformation />
+      <main>
+        <Introduction />
+        <WorkingExperience />
+        <DevelopmentSkills />
+        <PersonalInterests />
+      </main>
+    </>
   );
 }
