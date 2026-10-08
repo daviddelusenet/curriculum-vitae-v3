@@ -7,6 +7,7 @@ import "./globals.css";
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 const sourceSerif = Source_Serif_4({
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         sourceSerif.variable,
       )}
     >
-      <body className="h-full font-sans">
+      <body className="h-full bg-background font-sans text-foreground">
         <AppWrapper>{children}</AppWrapper>
       </body>
     </html>
