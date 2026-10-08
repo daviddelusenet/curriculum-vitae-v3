@@ -15,9 +15,25 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
+const title = "CV of David de Lusenet";
+const description = "Curriculum vitae of David de Lusenet";
+
 export const metadata: Metadata = {
-  title: "David de Lusenet – Curriculum Vitae",
-  description: "Curriculum vitae of David de Lusenet",
+  metadataBase: new URL("https://cv.lusenet.com"),
+  title,
+  description,
+  authors: [{ name: "David de Lusenet" }],
+  openGraph: {
+    type: "website",
+    url: "/",
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
