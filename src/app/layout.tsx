@@ -19,7 +19,7 @@ const title = "CV of David de Lusenet";
 const description = "Curriculum vitae of David de Lusenet";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.lusenet.com"),
+  metadataBase: new URL("https://daviddeluse.net"),
   title,
   description,
   authors: [{ name: "David de Lusenet" }],
