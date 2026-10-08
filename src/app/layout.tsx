@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Source_Serif_4 } from "next/font/google";
 import { twJoin } from "tailwind-merge";
-import { AppWrapper } from "./components/AppWrapper/AppWrapper";
+import { AppWrapper } from "@/components/app-wrapper/app-wrapper";
 import "./globals.css";
 
 const openSans = Open_Sans({

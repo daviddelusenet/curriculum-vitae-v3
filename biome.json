@@ -23,6 +23,15 @@
     "enabled": true,
     "rules": {
       "preset": "recommended",
+      "style": {
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"],
+            "requireAscii": true
+          }
+        }
+      },
       "nursery": {
         "useSortedClasses": {
           "level": "error",
