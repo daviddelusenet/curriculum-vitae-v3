@@ -15,10 +15,10 @@ export const profile: Profile = {
   name: "David de Lusenet",
   occupation: "Senior frontend developer",
   details: [
-    { label: "Date of birth", value: "June 24, 1992" },
+    { label: "Date of birth", value: "24 June 1992" },
     { label: "Nationality", value: "Dutch" },
     { label: "Current location", value: "Oostzaan" },
-    { label: "Drivers license", value: "B" },
+    { label: "Driver's license", value: "B" },
   ],
   socials: [
     {
@@ -33,7 +33,7 @@ export const profile: Profile = {
     },
     {
       type: "mail",
-      href: "mailto:me@daviddeluse.net",
+      href: "mailto:daviddelusenet@gmail.com",
       title: "Send me an email",
     },
   ],

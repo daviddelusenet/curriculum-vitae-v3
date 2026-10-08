@@ -8,7 +8,7 @@ export default function NotFound() {
       <Title as="h1" className="mb-6 md:mb-10">
         Something went wrong!
       </Title>
-      <Paragraph>Sorry, it looks like this page can't be found.. 😞</Paragraph>
+      <Paragraph>Sorry, it looks like this page can't be found 😞</Paragraph>
       <Paragraph>
         <Link
           href="/"
